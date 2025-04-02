@@ -1,0 +1,202 @@
+<!-- ****** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design. <div> tags should be replaced with semantic HTML tags where appropriate  ***** -->
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+  <head>
+    <!-- Required Boostrap meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Other meta tags -->
+    <meta name="Sam Pashmi" content="Max's Website">
+    <meta name="Sam Pashmi" content="MAX DESIGN & CONSTRUCTION">
+
+    <!-- ***** Link tags ***** -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+      <!-- IDEA: Or use Google's Material Icons (https://material.io/)- used like Google Fonts: http://google.github.io/material-design-icons/-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+      <!-- Font Awesome (https://fontawesome.com/) -->
+       <script src="https://kit.fontawesome.com/0b061bfed8.js" crossorigin="anonymous"></script>
+
+      <!-- Webfonts -->
+      <!-- IDEA: add you Google font link tags here -->
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif&display=swap" rel="stylesheet">
+
+      <!-- Stylesheet for lightbox If you want to have an Image gallery make sure you include this link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+
+
+      <!-- Bootstrap core CSS -->
+      <!-- IDEA: this is where Boostrap's CSS is loaded in via their CDN - you don't need to include the actual files in your site folder, but they are usful to refer to-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+      <!-- Your custom styles for this template - must be after Bootstrap's link element to over ride it (load after) as needed -->
+      <link href="css/custom.css" rel="stylesheet">
+
+    <title>Max, Design & Construction</title>
+  </head>
+
+   <body>
+     <!-- navbar -->
+     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+       <div class="container-fluid">
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+      <p class="Max">MAX DESIGN & CONSTRUCTION</p>
+             <picture>
+                 <source srcset="img/logodesktop.png" media="(min-width: 768px)">
+                 <source srcset="img/logomobile.png" media="(max-width: 767px)">
+                   <source srcset="img/logomobile.png" media="(min-width: 507px)">
+                 <img src="img/logo-default.png" alt="Logo" class="logo">
+             </picture>
+     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-12 justify-content-end">
+         <li class="nav-item">
+           <a class="nav-link" href="index.html" title="Home"> Home</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="Services.html" title="Services"> Services</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="About.html" title="About us"> About us</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link on" href="Contact.html" title="Contact us"> CONTACT US</a>
+         </li>
+       </ul>
+     </div>
+     </div>
+   </nav>
+     <!-- Content goes here -->
+     <div class="container">
+       <div class="space-3">
+       </div>
+      <h1 class="glow" id="home">CONTACT US</h1>
+      <div class="row">
+    <!-- Insert Contact form here -->
+                <form class="col-md-5 col-lg-6" action="https://formspree.io/f/xwplqagy" method="POST">
+                    <label for="first-name">First Name (required)</label>
+                    <input type="text" id="first-name" name="first-name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+
+                    <label for="project">Please briefly describe what your project is (required)</label>
+                    <textarea id="project" name="project" rows="4" required></textarea>
+
+                    <label for="email">Email Address (required)</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone (required)</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="" disabled selected hidden>Select a country</option>
+              <option value="United States">United States</option>
+              <option value="Canada">Canada</option>
+              <option value="United Kingdom">United Kingdom</option>
+              <option value="Australia">Australia</option>
+              <option value="Other">Other</option>
+          </select>
+
+          <label for="address1">Address Line 1 (required)</label>
+          <input type="text" id="address1" name="address1" required>
+
+          <label for="address2">Address Line 2</label>
+          <input type="text" id="address2" name="address2">
+
+          <div class="row minus distance">
+              <div>
+                  <label for="city">City (required)</label>
+                  <input type="text" id="city" name="city" required>
+              </div>
+              <div>
+                  <label for="state">State (required)</label>
+                  <input type="text" id="state" name="state" required>
+              </div>
+              <div>
+                  <label for="zip">ZIP Code (required)</label>
+                  <input type="text" id="zip" name="zip" required>
+              </div>
+          </div>
+
+          <button class="accordion2" type="submit">Submit</button>
+      </form>
+
+      <section class="middle col-md-7 col-lg-6 col-xl-6 gallery-block compact-gallery">
+          <div class="middle col-md-12 col-lg-12 col-xl-10 item zoom-on-hover">
+            <a class="middle lightbox" href="img/PAVING0.jpg">
+              <img class="middle img-fluid image" src="img/PAVING0.jpg" alt="PAVING">
+              <span class="description">
+                <span class="description-heading">PAVING</span>
+              </span>
+            </a>
+          </div>
+              </section>
+</div>
+
+  </div>
+
+
+    <!-- Form starts here -->
+    <footer class="jumbotron text-center">
+      <!-- footer information and social media links -->
+      <a class="px-2 social" href="tel:0431948699"><i class="fas fa-phone-square-alt fa-3x"></i></a>
+      <a class="px-2 social" href="mailto:maxlandscapedesign@gmail.com" target="_blank"><i class="fas fa-envelope-square fa-3x"></i></a>
+      <a class="px-2 social" href="https://www.youtube.com/@maxlandscaping" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+      <a class="px-2 social" href="https://www.instagram.com/maxlandscapedesign/" target="_blank"><i class="fab fa-instagram-square fa-3x"></i></a>
+      <a class="px-2 social" href="https://www.facebook.com/people/Max-Design-Construction/100063697147951/" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+      <span>&#169;</span>
+    </footer>
+
+
+<!-- =================No Content below here========================= -->
+    <!-- Bootstrap JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+<!-- This script is for the accordian - start -->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+<!-- This script is for accordian - end -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <!--Java Script for Lightbox THIS IS A MUST HAVE LINK AND CODE TO ACTIVATE LIGHTBOX FOR YOUR WEBSITE-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+            <script> baguetteBox.run('.compact-gallery', {animation:'slideIn'});</script>
+  </body>
+</html>
+<!-- ****** Blank Bootstrap 4.5 starting template for 101922, Web & Time Based Design  ***** -->
