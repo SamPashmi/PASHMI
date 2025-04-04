@@ -824,35 +824,41 @@ li.news{
    <body>
      <!-- navbar -->
      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
-       <div class="container-fluid">
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-      <p class="Max">MAX DESIGN & CONSTRUCTION</p>
-             <picture>
-                 <source srcset="logodesktop.png" media="(min-width: 768px)">
-                 <source srcset="logomobile.png" media="(max-width: 767px)">
-                   <source srcset="logomobile.png" media="(min-width: 507px)">
-                 <img src="logo-default.png" alt="Logo" class="logo">
-             </picture>
-     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
-       <ul class="navbar-nav mr-auto mt-2 mt-lg-0 col-12 justify-content-end">
-         <li class="nav-item">
-           <a class="nav-link on" href="index.html" title="HOME"> HOME</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="Services.html" title="Services"> Services</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="About.html" title="About us"> About us</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="Contact.html" title="Contact us"> Contact us</a>
-         </li>
-       </ul>
-     </div>
-     </div>
-   </nav>
+         <div class="container-fluid d-flex justify-content-between align-items-center">
+                 <p class="Max">MAX DESIGN & CONSTRUCTION</p>
+             <!-- Centered Logo and Title -->
+             <div class="mx-auto text-center d-flex flex-column align-items-center">
+                 <picture>
+                     <source srcset="logodesktop.png" media="(min-width: 768px)">
+                     <source srcset="logomobile.png" media="(max-width: 767px)">
+                     <img src="logodesktop.png" alt="Logo" class="logo">
+                 </picture>
+             </div>
+
+             <!-- Navbar Links -->
+             <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                 <ul class="navbar-nav">
+                     <li class="nav-item">
+                         <a class="nav-link on" href="index.html" title="HOME"> HOME</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="Services.html" title="Services"> Services</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="About.html" title="About us"> About us</a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="Contact.html" title="Contact us"> Contact us</a>
+                     </li>
+                 </ul>
+             </div>
+             <!-- Navbar Toggler (for mobile) -->
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+         </div>
+     </nav>
 
      <header class="header">
        <div class="space-3">
