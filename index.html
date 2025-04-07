@@ -50,7 +50,7 @@
     <title>Max, Design & Construction</title>
 
     <style>
-  /* **** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design */
+ /* ****** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design */
 
 /* Custom styles to overide and add to Bootstrap 4.6 css */
 
@@ -121,7 +121,7 @@ background-color: darkblue;
 
 body {
 		background-color: #3c2f2c;
-			cursor: img(..STARS-OF-SAM.png), auto;
+			cursor: url(../img/STARS-OF-SAM.png), auto;
 }
 
 .pp {
@@ -154,6 +154,13 @@ header.container {
 .logo {
     width: 150px;
     height: auto;
+    display: block; /* Ensures it doesn’t behave like inline text */
+    margin: 0 auto; /* Centers it horizontally */
+}
+
+/* Center text under the logo */
+.Max {
+    text-align: center;
 }
 
 /* Adjust logo size for smaller screens */
@@ -163,11 +170,12 @@ header.container {
     }
 }
 
-@media (max-width: 507px) {
+@media (max-width: 540px) {
     .logo {
         width: 110px;
     }
 }
+
 
 .containerNAV {
 	background-color: snow;
@@ -472,6 +480,16 @@ border-radius: 10px;
   color: snow;
 }
 
+.BT {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+}
+
+.Service-Menu {
+	margin-right: .5%;
+}
+
     button a:hover {
       color: #FFCC33;
       text-decoration: none;
@@ -487,6 +505,7 @@ border-radius: 10px;
   padding-right: 3rem;
 }
 
+
 /* Contact Form */
 
 
@@ -500,13 +519,12 @@ a.social:hover {
   color: #FFCC33;
   text-decoration: none;
   cursor: pointer;
-  transition: 0.3s;
+	transition: 0.3s;
 }
 
 .white{
 	color: snow;
 }
-
 
 /* span standout words */
 .standout {
@@ -584,18 +602,18 @@ a.social:hover {
 	line-height: normal;
 }
 
-.gallery-block.compact-gallery .item .description .description-body{
-  font-size: 150%;
-  font-weight: Bold;
-	line-height: normal;
-  margin-top: -35%;
-}
-
-.gallery-block.compact-gallery .item .description .description-body2{
+.gallery-block.compact-gallery .item .description .description-body1{
   font-size: 110%;
 	font-weight: Bold;
 	line-height: normal;
   margin-top: -37%;
+}
+
+.gallery-block.compact-gallery .item .description .description-body2{
+  font-size: 150%;
+  font-weight: Bold;
+	line-height: normal;
+  margin-top: -35%;
 }
 
 .gallery-block.compact-gallery .item .description .description-body3{
@@ -813,7 +831,7 @@ p.IM2{
 [class*="col-6 JSGM"]{
 	border-left: 6px dotted snow;
 }
-/* **** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design */
+/* ****** Blank Bootstrap 4.6 starting template for 101922, Web & Time Based Design */
 li.news{
 	margin-bottom: 5px;
 }
@@ -822,15 +840,21 @@ li.news{
   </head>
 
    <body>
+ 
      <!-- navbar -->
      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
          <div class="container-fluid d-flex justify-content-between align-items-center">
+             <!-- Navbar Toggler (for mobile) -->
+             <button class="navbar-toggler BT" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
                  <p class="Max">MAX DESIGN & CONSTRUCTION</p>
              <!-- Centered Logo and Title -->
              <div class="mx-auto text-center d-flex flex-column align-items-center">
                  <picture>
-                     <source srcset="logodesktop.png" media="(min-width: 768px)">
-                     <source srcset="logomobile.png" media="(max-width: 767px)">
+                     <source srcset="logodesktop.png" media="(max-width: 768px)">
+                     <source srcset="logomobile.png" media="(max-width: 540px)">
                      <img src="logodesktop.png" alt="Logo" class="logo">
                  </picture>
              </div>
@@ -852,14 +876,8 @@ li.news{
                      </li>
                  </ul>
              </div>
-             <!-- Navbar Toggler (for mobile) -->
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                 <span class="navbar-toggler-icon"></span>
-             </button>
          </div>
      </nav>
-
      <header class="header">
        <div class="space-3">
        </div>
